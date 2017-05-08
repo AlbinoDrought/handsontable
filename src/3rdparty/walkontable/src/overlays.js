@@ -268,9 +268,10 @@ class WalkontableOverlays {
    */
   onTableScroll(event) {
     // if mobile browser, do not update scroll positions, as the overlays are hidden during the scroll
-    if (isMobileBrowser()) {
+    // on the other hand, scrolling is really funky if we skip this on mobile. #2542
+    /*if (isMobileBrowser()) {
       return;
-    }
+    }*/
     const masterHorizontal = this.leftOverlay.mainTableScrollableElement;
     const masterVertical = this.topOverlay.mainTableScrollableElement;
     const target = event.target;
