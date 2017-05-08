@@ -2441,9 +2441,6 @@ var WalkontableOverlays = function WalkontableOverlays(wotInstance) {
     }
   },
   onTableScroll: function(event) {
-    if (isMobileBrowser()) {
-      return;
-    }
     var masterHorizontal = this.leftOverlay.mainTableScrollableElement;
     var masterVertical = this.topOverlay.mainTableScrollableElement;
     var target = event.target;
@@ -4510,7 +4507,7 @@ var domHelpers = ($__helpers_47_dom_47_element__ = _dereq_("helpers/dom/element"
 var domEventHelpers = ($__helpers_47_dom_47_event__ = _dereq_("helpers/dom/event"), $__helpers_47_dom_47_event__ && $__helpers_47_dom_47_event__.__esModule && $__helpers_47_dom_47_event__ || {default: $__helpers_47_dom_47_event__});
 var HELPERS = [arrayHelpers, browserHelpers, dataHelpers, dateHelpers, featureHelpers, functionHelpers, mixedHelpers, numberHelpers, objectHelpers, settingHelpers, stringHelpers, unicodeHelpers];
 var DOM = [domHelpers, domEventHelpers];
-Handsontable.buildDate = 'Mon Apr 03 2017 14:22:01 GMT+0200 (CEST)';
+Handsontable.buildDate = 'Mon May 08 2017 14:24:09 GMT-0700 (PDT)';
 Handsontable.packageName = 'handsontable';
 Handsontable.version = '0.31.2';
 var baseVersion = '@@baseVersion';
